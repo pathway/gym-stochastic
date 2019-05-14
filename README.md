@@ -1,4 +1,4 @@
-# stochastic-envs
+# gym-stochastic
 
 
 Reinforcement learning gyms for experimenting with stochasticity.

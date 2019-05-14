@@ -5,7 +5,7 @@ from gym.utils import seeding
 from gym.envs.toy_text import discrete
 
 
-class WetChicken1d(discrete.DiscreteEnv):
+class WetChicken1dEnv(discrete.DiscreteEnv):
     debug_out = False
     metadata = {
         'river_velocity': 1.0,
@@ -78,14 +78,4 @@ class WetChicken1d(discrete.DiscreteEnv):
 
     def render(self, mode="human"):
         return
-
-from gym.envs.registration import registry, register, make, spec
-
-
-register(
-    id='WetChicken1d-v0',
-    entry_point='wetchicken1d:WetChicken1d',
-    max_episode_steps=200,
-    reward_threshold=20,
-)
 

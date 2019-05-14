@@ -5,7 +5,7 @@ Reinforcement learning gyms for experimenting with stochasticity.
 
 #### WetChicken1d
 
-1 dimensional Wet Chicken as described in paper below.  :
+1 dimensional Wet Chicken as described in section 4.1 of:
 
 Alexander Hans and Steffen Udluft. Efficient uncertainty propagation for reinforcement learning
 with limited data. In ICANN, pp. 70–79. Springer, 2009.

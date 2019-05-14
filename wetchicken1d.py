@@ -6,6 +6,7 @@ from gym.envs.toy_text import discrete
 
 
 class WetChicken1d(discrete.DiscreteEnv):
+    debug_out = False
     metadata = {
         'river_velocity': 1.0,
         'river_waterfall_x': 3.0,
@@ -61,7 +62,7 @@ class WetChicken1d(discrete.DiscreteEnv):
 
         # fell off?
         if finalx > self.metadata['river_waterfall_x']:
-            print('FELL')
+            if self.debug_out: print('FELL')
             finalx=0.0
             done=True
 
@@ -70,7 +71,8 @@ class WetChicken1d(discrete.DiscreteEnv):
 
         obs[0]=finalx
 
-        print('self.last_obs, deltax, turbx, obs, reward, done', self.last_obs, deltax, turbx, obs, reward, done)
+        if self.debug_out:
+            print('self.last_obs, deltax, turbx, obs, reward, done', self.last_obs, deltax, turbx, obs, reward, done)
         return obs, reward, done, {}
 
 

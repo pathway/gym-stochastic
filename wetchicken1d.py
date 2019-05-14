@@ -82,7 +82,7 @@ from gym.envs.registration import registry, register, make, spec
 
 register(
     id='WetChicken1d-v0',
-    entry_point='envs.wetchicken1d:WetChicken1d',
+    entry_point='wetchicken1d:WetChicken1d',
     max_episode_steps=200,
     reward_threshold=20,
 )

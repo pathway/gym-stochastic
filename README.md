@@ -5,7 +5,14 @@ Reinforcement learning gyms for experimenting with stochasticity.
 #### DistributionContextualBanditEnv-v0
 
 - based on the wonderful  https://github.com/JKCooper2/gym-bandits (under [MIT license](https://github.com/JKCooper2/gym-bandits/commit/1aba0c6897346e31c2935c13249ae35ca4766121#diff-9879d6db96fd29134fc802214163b95a) )
-- Generalized further
+- Generalized further to allow more features
+
+Features
+- arbitrary distributions for reward amount and payoff probability
+- mix and match constant, per-arm fixed, gaussian, and uniform distributions
+- compose distributions in various ways, including summing, multiplying, and weighted select
+- use arbitrary functions for computing probabilties
+
 ```
 import gym_stochastic
 from gym_stochastic.envs.dist_utils import *

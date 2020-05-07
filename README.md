@@ -12,7 +12,10 @@ Features
 - mix and match constant, per-arm fixed, gaussian, and uniform distributions
 - compose distributions in various ways, including summing, multiplying, and weighted select
 - use arbitrary functions for computing probabilties
+- context is n-dimensional unit vector (optional)
 
+
+Example
 ```
 import gym_stochastic
 from gym_stochastic.envs.dist_utils import *
@@ -32,6 +35,7 @@ env=gym.make('DistributionContextualBanditEnv-v0',arms=2, p_dist_fn=1.0, r_dist_
 ```
 - Above config results in arm-reward histograms:
 ![Env1](https://github.com/pathway/gym-stochastic/blob/master/notebooks/env1.png)
+
 
 #### WetChicken1d-v0
 

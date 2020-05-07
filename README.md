@@ -2,7 +2,13 @@
 
 Reinforcement learning gyms for experimenting with stochasticity.
 
-#### WetChicken1d
+#### DistributionContextualBanditEnv-v0
+
+- based on the wonderful  https://github.com/JKCooper2/gym-bandits (under [MIT license](https://github.com/JKCooper2/gym-bandits/commit/1aba0c6897346e31c2935c13249ae35ca4766121#diff-9879d6db96fd29134fc802214163b95a) )
+- Generalized further
+
+
+#### WetChicken1d-v0
 
 1 dimensional Wet Chicken as described in section 4.1 of:
 
